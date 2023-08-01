@@ -21,7 +21,8 @@ export class TableComponent {
   displayedColumns: string[] = ['id', 'name', 'date', 'cards'];
 
   openDialog() {
-    this.dialog.open(DialogComponent);
+    this.dialog.open(DialogComponent, {
+    });
   }
 
 }

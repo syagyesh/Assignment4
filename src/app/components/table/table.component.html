@@ -12,9 +12,9 @@
       <mat-cell *matCellDef="let element"> {{element.date}} </mat-cell>
     </ng-container>
     <ng-container matColumnDef="cards">
-      <mat-header-cell *matHeaderCellDef> Click Button </mat-header-cell>
+      <mat-header-cell *matHeaderCellDef> Click Me </mat-header-cell>
       <mat-cell *matCellDef="let element">
-        <button mat-button (click)="openDialog()">{{element.name}}</button>
+        <button mat-raised-button (click)="openDialog()">{{element.name}}</button>
       </mat-cell>
     </ng-container>
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

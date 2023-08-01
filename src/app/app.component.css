@@ -1,0 +1,10 @@
+.container {
+    width: 80vw;
+    margin: 5em auto;
+}
+
+h1 {
+    margin: 2em ;
+    text-align: center;
+    font-weight: 400;
+}
