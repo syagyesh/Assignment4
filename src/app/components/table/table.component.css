@@ -1,0 +1,43 @@
+mat-header-row {
+    background-color: #3f42e7;
+}
+
+mat-header-row:hover {
+    background-color: #3f42e7;
+}
+
+mat-header-cell {
+    font-size: 25px;
+    color: #fff;
+}
+
+mat-row:hover:nth-child(2n+1) {
+    background-color: #0a172b;  
+}
+
+mat-row:nth-child(2n+1) {
+    background-color: #0a172b;
+}
+
+mat-row:hover:nth-child(2n) {
+    background-color: #19293b;  
+}
+
+mat-row:nth-child(2n) {
+    background-color: #19293b;
+}
+
+mat-cell {
+    color: #fff;
+    font-size: 20px;
+}
+
+button {
+    background: none;
+	color: #3f42e7;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}

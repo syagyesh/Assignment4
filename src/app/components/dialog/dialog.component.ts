@@ -34,6 +34,5 @@ interface Data {
 export class DialogComponent {
   constructor(@Inject(MAT_DIALOG_DATA) public cardsData: Data[]) {}
   
-  displayedColumns: string[] = ['id', 'name', 'gender', 'class', 'seat', 'club', 'persona', 'crush', 'strength', 'hairstyle', 'color', 'eyes', 'info'];
 
 }

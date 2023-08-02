@@ -14,10 +14,11 @@
     <ng-container matColumnDef="cards">
       <mat-header-cell *matHeaderCellDef> Click Me </mat-header-cell>
       <mat-cell *matCellDef="let element">
-        <button mat-raised-button (click)="openDialog(element.cards)">{{element.name}}</button>
+        <button (click)="openDialog(element.cards)">{{element.name}}</button>
       </mat-cell>
     </ng-container>
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
 </mat-table>
   
+<!-- mat-raised-button  -->
