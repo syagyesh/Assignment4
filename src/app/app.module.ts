@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableComponent } from './components/table/table.component';
 
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+
 //  Material UI
 import {MatTableModule} from '@angular/material/table';
 import {MatDialogModule} from '@angular/material/dialog';
