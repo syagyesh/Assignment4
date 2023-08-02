@@ -2,7 +2,6 @@ import { Component, Inject } from '@angular/core';
 import {MatDialog, MAT_DIALOG_DATA, MatDialogModule} from '@angular/material/dialog';
 import dataList from '../../data.json';
 
-import { ServiceService } from '../../common/service.service';
 import { MatDialogRef } from '@angular/material/dialog';
 
 interface Data1 {
@@ -34,18 +33,6 @@ interface Data {
 })
 export class DialogComponent {
   constructor(@Inject(MAT_DIALOG_DATA) public cardsData: Data[]) {}
-
-  // cards: Data[] = [];
-  // ngOnInit(): void {
-  //   this.cards = this.shared.getData();
-  //   console.log(this.cards);
-  // }
-
-  // dataJson = this.cards;  
-
-  mega() {
-    console.log(this.cardsData);
-  }
   
   displayedColumns: string[] = ['id', 'name', 'gender', 'class', 'seat', 'club', 'persona', 'crush', 'strength', 'hairstyle', 'color', 'eyes', 'info'];
 
