@@ -32,7 +32,11 @@ interface Data {
   styleUrls: ['./dialog.component.css']
 })
 export class DialogComponent {
-  constructor(@Inject(MAT_DIALOG_DATA) public cardsData: Data[]) {}
-  
 
+  dataC : any;
+  constructor(@Inject(MAT_DIALOG_DATA) public cardsData: any) {
+    this.dataC = cardsData;
+  }
+  
+  displayedColumns : string[] = ['id', 'name', 'gender', 'class', 'seat', 'club', 'persona', 'crush', 'strength', 'hairstyle', 'color', 'eyes', 'info']
 }

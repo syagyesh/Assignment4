@@ -36,9 +36,8 @@ export class TableComponent {
 
   dataJson : Data[] = dataList;
   displayedColumns: string[] = ['id', 'name', 'date', 'cards'];
-  displayedColoums1: string[] = ['id', 'name', 'gender','class','seat','club','persona','crush','strength','hairstyle','color','eyes','info'];
 
-  openDialog(cards: Data1[]) {
+  openDialog(cards: any) {
     this.dialog.open(DialogComponent, {
       data: cards
     });
