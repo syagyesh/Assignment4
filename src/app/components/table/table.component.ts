@@ -1,29 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import dataList from '../../data.json';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
-
-interface Data {
-  id: string;
-  name: string;
-  date: string;
-}
-
-interface Data1 {
-  id: string;
-  name: string;
-  gender: string;
-  class: string;
-  seat: string;
-  club: string;
-  persona: string;
-  crush: string;
-  strength: string;
-  hairstyle: string;
-  color: string;
-  eyes: string;
-  info: string;
-}
 
 @Component({
   selector: 'app-table',
@@ -34,12 +12,13 @@ export class TableComponent {
   constructor(public dialog: MatDialog) {}
 
 
-  dataJson : Data[] = dataList;
+  dataJson : any = dataList;
   displayedColumns: string[] = ['id', 'name', 'date', 'cards'];
 
-  openDialog(cards: any) {
+  openDialog(cards: any, name: string) {
     this.dialog.open(DialogComponent, {
-      data: cards
+      data: {cardsData: cards,
+             nameData: name}
     });
   }
 

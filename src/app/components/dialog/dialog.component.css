@@ -1,0 +1,60 @@
+.dialog {
+    width: 40vw;
+    background-color: #0a172b;
+}
+
+.dialog > h1 {
+    color: #fff;
+    background-color: #3f42e7;
+}
+
+.dialog-data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #0a172b;
+    color: #fff;
+}
+
+mat-card {
+    width: 100%;
+}
+
+mat-card-content {
+    width: 50%;
+    padding: 0 0 2em 0;
+}
+
+.mat-mdc-card-content {
+    padding-top: 16px;
+    padding-left: 2em;
+}
+
+.mat-mdc-card-content:last-child {
+    padding-right: 1em;
+}
+
+.mat-mdc-dialog-content.mdc-dialog__content {
+    padding: 0;
+}
+
+mat-card-content:nth-child(1),mat-card-content:nth-child(2),mat-card-content:nth-child(5),mat-card-content:nth-child(6),mat-card-content:nth-child(9),mat-card-content:nth-child(10),mat-card-content:nth-child(13)    {
+    background-color: #19293b;
+}
+
+mat-card-content:last-of-type {
+    width: 100%;
+}
+
+mat-card-content {
+    padding: 16px 0 32px;   
+}
+
+mat-card-content > span {
+    padding: 2em 2em 1em 0;
+}
+
+.dialog button {
+    color: #fff;
+    background-color: #3f42e7;
+}

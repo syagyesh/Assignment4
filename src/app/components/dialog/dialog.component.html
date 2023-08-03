@@ -1,4 +1,96 @@
-<div mat-dialog-content>
+<div class="dialog">
+  <h1 mat-dialog-title>Hi {{fullData.nameData}}</h1>
+  <div mat-dialog-content>
+    <mat-card class="dialog-data">
+      <mat-card-content>
+        <span>ID :</span>
+        <span>{{fullData.cardsData[0].ID}}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <span>Name :</span>
+        <span>{{fullData.cardsData[0].Name}}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <span>Gender :</span>
+        <span>{{fullData.cardsData[0].Gender}}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <span>Class :</span>
+        <span>{{fullData.cardsData[0].Class}}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <span>Seat :</span>
+        <span>{{fullData.cardsData[0].Seat}}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <span>Club :</span>
+        <span>{{fullData.cardsData[0].Club}}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <span>Persona :</span>
+        <span>{{fullData.cardsData[0].Persona}}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <span>Crush :</span>
+        <span>{{fullData.cardsData[0].Crush}}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <span>Strength :</span>
+        <span>{{fullData.cardsData[0].Strength}}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <span>Hairstyle :</span>
+        <span>{{fullData.cardsData[0].Hairstyle}}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <span>Color :</span>
+        <span>{{fullData.cardsData[0].Color}}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <span>Eyes :</span>
+        <span>{{fullData.cardsData[0].Eyes}}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <span>Info :</span>
+        <span>{{fullData.cardsData[0].Info}}</span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div mat-dialog-content>
   <mat-table [dataSource]="cardsData" class="mat-elevation-z8 table">
       <ng-container matColumnDef="id">
         <mat-header-cell *matHeaderCellDef> Id </mat-header-cell>
@@ -59,20 +151,4 @@
 </div>
 <div mat-dialog-actions>
   <button mat-button mat-dialog-close>Close</button>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div> -->
